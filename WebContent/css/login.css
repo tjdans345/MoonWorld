@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: #334984;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.log-span{
+    padding: 10px;
+    background: #334984;
+    color: white;
+	width : 20%;
+    text-align: center;
+}
+
+.log-span2{
+    padding: 10px;
+    background: #334984;
+    color: white;
+	width : 30%;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid #334984;
+}
+
+/* Set a style for the submit button */
+.btn-log {
+	font-size : 20px;
+    background-color: white;
+    color: #334984;
+    padding: 15px 20px;
+    border: 2px solid;
+    border-radius : 3px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.btn-log:hover {
+	color : white;
+    background-color: #334984;
+    font-weight: bold;
+}
+
+.btn-log-2 {
+	font-size : 20px;
+    background-color: white;
+    color: #334984;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius : 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-log-2:hover {
+	color : white;
+    background-color: #334984;
+    font-weight: bold;
+}
+
+#em-span{
+	color: #f0ff00;
+	font-weight: bold;
+}

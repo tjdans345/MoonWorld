@@ -1,0 +1,234 @@
+@CHARSET "UTF-8";
+
+.card-img-top{
+	margin : 0 auto;
+	padding : 0;
+	width: 400px;
+	height: 400px;
+}
+
+.align-items-center{
+	margin-left: 120px;
+}
+
+
+.card-text{
+	text-align: center;
+}
+
+.col-md-4{
+	margin: 0 auto;
+}
+
+
+
+/*read_imgbd.jsp*/
+
+.main{
+	text-align: center;
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#imgbdrd{
+	text-align: center;
+}
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    height: 80%;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 80%){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*메인페이지 글쓰기 버튼*/
+.button {
+  border-radius: 4px;
+  background-color: #223055;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*글쓰기 페이지*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin: 5px 0;
+}
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+
+input[type=file]{
+	margin : 5px 0;
+	background-color: white;
+	height: 30px;
+}
+
+#img_div{
+	position: relative;
+}
+
+#img_sub,#img_sub2{
+	text-align : center;
+	color: #223055;
+	background-color: white;
+	border : 2px solid #223055;
+	height: 50px;
+	width: 85px;
+	font-size : 15px;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#img_sub:HOVER,#img_sub2:HOVER {
+	background-color: #223055;
+	color: white;
+}
+
+/*페이징 버튼*/
+
+.pagination{
+	display : inline-block;
+	position: absolute;
+	right: 45%;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.pagination a:hover:not(.active) {background-color: #121a2e; color: white;}

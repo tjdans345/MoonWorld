@@ -1,0 +1,307 @@
+@CHARSET "UTF-8";
+
+html,body{
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+div{
+	display: block;
+}
+
+#mamInfoContent{
+	border: 1px solid red;
+	z-index: 9999999;
+}
+
+#index_body{
+	background-color: #f2f4fb;
+}
+
+/*크루셀 CSS*/
+#home-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+#home-slider .caption {
+  position: absolute;
+  top: 50%;
+  margin-top: -104px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 15;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+#home-slider .caption h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.caption .btn-start {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding:14px 40px;
+  border: 1px solid #6e6d6c;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.caption .btn-start:hover {
+  color: #fff
+}
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.carousel-fade .carousel-inner .item:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.7);
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+.left-control, .right-control {
+  position: absolute;
+  top: 50%;
+  height: 51px;
+  width: 51px;
+  line-height: 48px;
+  border-radius: 50%;
+  border:1px solid #fff;  
+  z-index: 20;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.left-control {
+  left: -51px
+} 
+
+.right-control {
+  right: -51px;
+}
+
+.left-control:hover, 
+.right-control:hover {
+  color: #fff;
+}
+
+#home-slider:hover .left-control {
+  left:30px
+} 
+
+#home-slider:hover .right-control {
+  right:30px
+}
+
+#home-slider .fa-angle-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  color: #fff;
+  display: inline-block;
+  width: 24px;
+  margin-left: -12px;
+  font-size: 24px;
+  line-height: 24px;
+  z-index: 999;
+  -webkit-animation: bounce 3000ms infinite;
+  animation: bounce 3000ms infinite;
+}
+
+
+
+/*네비게이션바*/
+#navbar{
+	clear: both;
+	color: white;
+	background-color: #2b3c6c;
+	height: 60px;
+	padding-top: 5px;
+	padding-left: 20%;
+}
+
+
+#navbar .navbar-nav li a:HOVER,
+#navbar .navbar-nav li a:focus {
+  color: white;
+  outline:none;
+  outline-offset: 0;
+  text-decoration:none;  
+  background: transparent;
+  background-color: #1a2442;
+}
+
+
+.navbar li a{
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding : auto 0;
+}
+
+.dropdown-menu{
+	background-color: #4864b7;
+}
+
+#nav-mem{
+	position: fixed;
+	right: 50px;
+}
+
+.scroll{
+	color: white;
+}
+
+
+
+
+
+.about_img{
+	border: 2px solid;
+}
+
+
+/*이미지 게시판 CSS*/
+#about, #photo, #board, #contact{
+	padding-top : 60px;
+	background-color: #f2f4fb;
+}
+
+#img-test{
+	width: 100%;
+	border: 1px solid red;
+	height: 100px;
+	overflow: visible;
+}
+
+#testest img{
+	height : 100%;
+	vertical-align: middle;
+	overflow: hidden;
+	
+}
+
+#testest{
+	border: 1px solid red;
+	height: 500px;
+}
+
+#testest>div{
+	border: 1px solid red;
+}
+
+#testest #d1s{
+	width : 50%;
+	height: 80%;
+}
+
+#testest #d2,#d3,#d4{
+	height : 40%;
+}
+
+#testest #d2{
+	width: 100%;
+}
+
+#testest #d3,#d4{
+	width: 50%;
+}
+
+/*리뷰게시판 css*/
+
+#board, #contact{
+	width: 100%;
+	height: 100%;
+}
+
+#board1,#board2{
+	width: 50%;
+	height: 100%;
+	float: left;
+	margin: 0;
+	padding : auto;
+}
+
+/* contact영역*/
+#contact{
+	font-weight : bold;
+	color : #0a0d16;
+}
+
+#contact div{
+	font-size: 15px;
+}
+
+#contact label{
+	color: black;
+}
+/*mail contact 버튼*/
+
+.form-group{
+	position: relative;
+}
+
+.btn-send{
+	background-color: white;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border : 2px solid;
+	border-radius: 5px;
+	font-weight: bold;
+	position: absolute;
+	right: 30px;
+	top: 350px;
+}
+
+.btn-send:HOVER{
+	background: #223055;
+    color: white;
+    border: none;
+}

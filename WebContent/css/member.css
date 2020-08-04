@@ -1,0 +1,277 @@
+@CHARSET "UTF-8";
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+form#join{
+	margin: 0 auto;
+	width: 500px;
+	border:1px solid #ccc
+}
+
+/* Full-width input fields */
+#mem_join_con input[type=text],#mem_join input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+/*     border: none; */
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+#mem_join_con input[type=text]:focus,#mem_join input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #223055;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius : 5px;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+/*     padding: 14px 20px; */
+    background-color: #f97368;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+#mem_join_con{
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+#id_sec{
+	list-style: none;
+	position : relative;
+}
+
+#id_sec>li{
+	position:absolute;
+}
+
+#id_sec>li:nth-of-type(1) { left: 0px;  top:0px; width : 250px;}
+#id_sec>li:nth-of-type(2) { right : 40px;  top:16px;}
+
+
+
+/*mem_up*/
+
+body#mem_up {
+  font-size: 17px;
+  padding: 8px;
+}
+
+#mem_up_con {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+row#mem_up_row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+
+.col-25 {
+  padding: 0 16px;
+}
+
+#mem_up_row label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#btn,#btn2 {
+  background-color: #223055;
+  color : white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 45%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#postcode_btn{
+/* 	background-color: white; */
+/*     padding: 10px 20px; */
+    font-size: 15px;
+    cursor: pointer;
+    border : 2px solid;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+#postcode_btn:HOVER{
+	background: #223055;
+    color: white;
+}
+
+.btn:hover {
+  background-color: #0f1526;
+  color : white;
+  font-weight: bold;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#mem_up_con input[type=text],input[type=password] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  #mem_up_row {
+    flex-direction: column-reverse;
+  }
+}
+
+/*회원정보 수정 비밀번호 입력받는 화면*/
+#mUp_div { 
+	text-align : center;
+	height: 100%;
+	}
+
+#mUp_div2{
+	height: 200px;
+}
+
+#mUp_div div{
+	margin-top: 100px;
+}
+
+
+#mUp_pass{
+	width : 40%;
+}
+
+#mUp_btn{
+	width : 40%;
+}
+
+
+/*아이디 중복체크 창*/
+.idchk_btn{
+	margin : 0;
+	text-align : center;
+	color: #223055;
+	background-color: white;
+	border : 2px solid #223055;
+	font-size : 15px;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.idchk_btn:HOVER {
+	color: white;
+	background-color: #223055;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#chkid{
+	padding : 5px;
+	border: 1px solid #223055;
+	border-radius: 3px;
+}
+
